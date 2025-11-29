@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Payal Jain | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header" id="home">
+    <nav class="nav container">
+      <div class="nav__brand">
+        <span class="nav__logo">Payal Jain</span>
+      </div>
+
+      <button class="nav__toggle" aria-label="Toggle navigation">
+        <span class="nav__line"></span>
+        <span class="nav__line"></span>
+      </button>
+
+      <ul class="nav__links">
+        <li><a href="#home" class="nav__link">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#education" class="nav__link">Education</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+        <li><a href="#resume" class="nav__link">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="hero section">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+
+          <h1 class="hero__title">
+            <span id="hero-typewriter"></span>
+            <span class="hero__cursor">|</span>
+          </h1>
+
+          <p class="hero__subtitle">
+            I'm
+            <span class="hero__role" id="role-rotator">MCA Student | AI Enthusiast</span>
+          </p>
+
+            <p class="hero__description">
+              Passionate about leveraging Machine Learning and Data Analysis to solve real-world problems.
+              Currently pursuing MCA with hands-on experience in Python, Pandas, NumPy, Scikit-learn,
+              and Streamlit for building and deploying ML models.
+            </p>
+        </div>
+    </section>
+
+    <section class="section section--alt" id="about">
+      <div class="container reveal">
+        <div class="section__header">
+          <h2 class="section__title">About Me</h2>
+          <p class="section__subtitle">
+            MCA student with a strong interest in Machine Learning, data analytics and model deployment,
+            combining a tech mindset with a scientific background.
+          </p>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__text">
+            <p>
+              I am an MCA student and Machine Learning &amp; Data Analysis enthusiast with hands-on
+              experience in Python, Pandas, NumPy, Matplotlib and Scikit-learn. I enjoy exploring datasets,
+              performing EDA, engineering meaningful features and building ML models that solve real-world
+              problems. I have worked on projects ranging from survival prediction and healthcare risk
+              prediction to intrusion detection in network traffic.
+            </p>
+            <p>
+              My goal is to grow as an AI/ML Engineer, focusing on building accurate, reliable and
+              well-documented ML pipelines. I am particularly interested in model deployment using
+              platforms like Streamlit and Hugging Face, and in applying data-driven approaches to domains
+              such as cybersecurity, healthcare and scientific research.
+            </p>
+          </div>
+
+          <div class="about__highlights">
+            <h3>Key Focus Areas</h3>
+            <ul>
+              <li>Machine Learning &amp; Data Analysis</li>
+              <li>End-to-End ML Pipelines (preprocessing to deployment)</li>
+              <li>Data Visualization &amp; Exploratory Data Analysis (EDA)</li>
+              <li>Cybersecurity ML &amp; Intrusion Detection Systems</li>
+              <li>Model Deployment with Streamlit &amp; Hugging Face</li>
+              <li>Bridging Biotechnology and Data Science</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" id="skills">
+      <div class="container reveal">
+        <div class="section__header">
+          <h2 class="section__title">Skills</h2>
+          <p class="section__subtitle">
+            Categorised technical &amp; soft skills based on my Machine Learning profile.
+          </p>
+        </div>
+
+        <div class="skills__grid">
+          <div class="skill-card">
+            <h3>Programming Languages</h3>
+            <p>Python</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Frameworks &amp; Libraries</h3>
+            <p>Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>AI / ML Libraries</h3>
+            <p>Scikit-learn, XGBoost, LightGBM, NumPy, Pandas</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Tools &amp; Platforms</h3>
+            <p>MS Office, Jupyter Notebook, Google Colab, Streamlit Cloud, Hugging Face Hub</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Concepts</h3>
+            <p>Data Preprocessing, EDA, Data Visualization, Feature Engineering, ML Algorithms &amp; Deployment</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Soft Skills</h3>
+            <p>Problem Solving, Analytical Thinking, Communication, Teamwork, Time Management, Adaptability</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<section class="section section--alt" id="projects">
+  <div class="container reveal">
+
+    <div class="section__header">
+      <h2 class="section__title">Projects</h2>
+      <p class="section__subtitle">
+        Selected Machine Learning projects showcasing end-to-end pipelines, analysis and deployment.
+      </p>
+    </div>
+
+    <div class="projects__list">
+
+
+      <article class="project-card left">
+        <div class="project-card__content">
+          <h3 class="project-card__title">
+            Titanic Survival Prediction (84% Accuracy)
+          </h3>
+          <p class="project-card__desc">
+            Built a Machine Learning model to predict passenger survival on the Titanic dataset. Performed
+            data preprocessing, handled missing values and engineered meaningful features. Trained and
+            compared multiple algorithms including Logistic Regression, Random Forest and SVM, and also
+            experimented with unsupervised techniques like K-Means, DBSCAN and PCA to understand data
+            structure and key survival patterns.
+          </p>
+          <p class="project-card__stack">
+            <strong>Tech Stack:</strong>
+            Python, Scikit-learn, Pandas, Matplotlib
+          </p>
+        </div>
+      </article>
+
+      <article class="project-card right">
+        <div class="project-card__content">
+          <h3 class="project-card__title">
+            Diabetes Prediction Web App (77.2% Accuracy)
+          </h3>
+          <p class="project-card__desc">
+            Developed an end-to-end Machine Learning web application for diabetes risk prediction.
+            Implemented data preprocessing, feature scaling and model training using SVM. Integrated
+            the trained model into a Streamlit web interface to allow users to input health parameters
+            and get real-time predictions, and deployed it on Streamlit Cloud.
+          </p>
+          <p class="project-card__stack">
+            <strong>Tech Stack:</strong>
+            Python, Scikit-learn, Pandas, NumPy, Streamlit
+          </p>
+        </div>
+      </article>
+
+
+      <article class="project-card left">
+        <div class="project-card__content">
+          <h3 class="project-card__title">
+            Intrusion Detection System (Cybersecurity ML Model)
+          </h3>
+          <p class="project-card__desc">
+            Designed a two-stage Machine Learning pipeline using XGBoost and LightGBM on the CICIDS 2017
+            dataset to detect network intrusions and cyber attacks. Focused on robust feature engineering,
+            handling class imbalance and optimizing model performance. Achieved an AUC of approximately
+            0.9999 and deployed the solution with a Streamlit interface to analyse CSV/PCAP traffic data
+            and classify different types of attacks.
+          </p>
+          <p class="project-card__stack">
+            <strong>Tech Stack:</strong>
+            Python, XGBoost, LightGBM, Scikit-learn, Streamlit
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+   
+    <section class="section" id="education">
+      <div class="container reveal">
+        <div class="section__header">
+          <h2 class="section__title">Education</h2>
+          <p class="section__subtitle">
+            Academic background connecting Biotechnology, Bioinformatics and Computer Applications.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline__item">
+            <h3 class="timeline__title">
+              Master of Computer Applications (MCA)
+            </h3>
+            <span class="timeline__meta">
+              K.R. Mangalam University • 2025 – 2027 • Pursuing
+            </span>
+            <p class="timeline__desc">
+              Currently pursuing MCA with a focus on Machine Learning, data analytics and software
+              development. Building a strong foundation in programming, algorithms and applied AI
+              through academic coursework and hands-on ML projects.
+            </p>
+          </article>
+
+          <article class="timeline__item">
+            <h3 class="timeline__title">
+              B.Sc. Biotechnology &amp; Bioinformatics
+            </h3>
+            <span class="timeline__meta">
+              CCSU University • 2022 – 2025 • CGPA: 8.1 / 10
+            </span>
+            <p class="timeline__desc">
+              Completed B.Sc. in Biotechnology &amp; Bioinformatics, gaining a solid understanding of
+              biological systems, data analysis and research-oriented thinking. This background helps
+              me connect scientific problem-solving with data-driven Machine Learning approaches.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+ 
+    <section class="section section--alt" id="experience">
+      <div class="container reveal">
+        <div class="section__header">
+          <h2 class="section__title">Experience</h2>
+          <p class="section__subtitle">
+            Academic and project-based experience in Machine Learning and data analysis.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline__item">
+            <h3 class="timeline__title">
+              Academic ML Projects &amp; Hackathon Participant
+            </h3>
+            <span class="timeline__meta">
+              K.R. Mangalam University • 2024 – Present
+            </span>
+            <p class="timeline__desc">
+              Worked on multiple academic Machine Learning projects, including survival prediction,
+              healthcare risk prediction and cybersecurity intrusion detection. Responsibilities included
+              data preprocessing, EDA, feature engineering, training and evaluating ML models, and
+              deploying applications using Streamlit. Participated in Hackathon 2.0, collaborating with
+              peers to solve problem statements under strict timelines and improving teamwork and
+              communication skills.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+<section class="section" id="contact">
+  <div class="contact-center">
+    <div class="container reveal">
+      
+      <div class="section__header">
+        <h2 class="section__title">Contact</h2>
+        <p class="section__subtitle">
+          Feel free to reach out for opportunities, collaborations or questions related to AI, ML and data analysis.
+        </p>
+      </div>
+
+      <div class="contact__content">
+
+        <p class="contact__intro">
+          I am open to internships, ML projects, freelance work and collaboration opportunities 
+          in Machine Learning, data analytics and AI-driven applications. Feel free to reach out 
+          for projects, discussions or learning-focused collaborations.
+        </p>
+
+        <ul class="contact__list">
+          <li>
+            <span class="contact__label">Location:</span>
+            <span>Delhi, India</span>
+          </li>
+
+          <li>
+            <span class="contact__label">Email:</span>
+            <a href="mailto:payaljain1503@gmail.com">
+              payaljain1503@gmail.com
+            </a>
+          </li>
+
+          <li>
+            <span class="contact__label">Phone:</span>
+            <a href="tel:7726070501">7726070501</a>
+          </li>
+
+          <li>
+            <span class="contact__label">GitHub:</span>
+            <a href="https://github.com/Payaljain03" target="_blank">
+              Payaljain03
+            </a>
+          </li>
+
+          <li>
+            <span class="contact__label">LinkedIn:</span>
+            <a href="https://www.linkedin.com/in/payal-jain-7bb072341" target="_blank">
+              payal-jain-7bb072341
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="section section--alt" id="resume">
+      <div class="container reveal">
+        <div class="section__header">
+          <h2 class="section__title">Resume</h2>
+          <p class="section__subtitle">
+            Latest information about my skills, projects, education and achievements.
+          </p>
+        </div>
+
+        <div class="resume__card">
+          <h3>Download My Resume</h3>
+          <p>
+            This resume highlights my journey as an MCA student and Machine Learning &amp; Data Analysis
+            enthusiast, including my key projects, technical skills, education and certifications. I
+            regularly update it with new ML experiments, deployments and academic achievements.
+          </p>
+    
+          <a
+            href="https://drive.google.com/file/d/1CTxkXOM8FZlxJkcyfcScFZgqQ_1SIX5C/view?usp=drive_link "
+            target="_blank"
+            class="btn btn--primary"
+          >
+            Download Resume (PDF)
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <p>
+        © <span id="year"></span> Payal Jain. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
